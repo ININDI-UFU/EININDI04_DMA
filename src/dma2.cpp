@@ -30,16 +30,16 @@ void makePoints()
 void buildWave()
 {
     static uint8_t sampleIndex = 0;
-    //dacWrite(def_pin_DAC1, sineTable[sampleIndex]);
-    ledcWrite(PWM_CHANNEL, sineTable[sampleIndex]);
+    dacWrite(def_pin_DAC1, sineTable[sampleIndex]);
+    // ledcWrite(PWM_CHANNEL, sineTable[sampleIndex]);
     sampleIndex = (sampleIndex + 1) % NUMSAMPLES;
 }
 
 void setup()
 {
     IIKit.setup();
-    ledcAttachPin(def_pin_DAC1, PWM_CHANNEL);
-    ledcSetup(PWM_CHANNEL, 500, 10); // Frequência 500Hz,
+    // ledcAttachPin(def_pin_PWM, PWM_CHANNEL);
+    // ledcSetup(PWM_CHANNEL, 500, 10); // Frequência 500Hz,
     makePoints();
     //Para gerar uma senoide de 1kHz com 100 amostras, o período total é 1000 µs.
     //Assim, cada amostra deve ser atualizada a cada 1000/100 = 10 µs.
