@@ -46,6 +46,5 @@ void setup()
 
 void loop()
 {
-    IIKit.loop();
-    jtaskLoop(); // Chama o loop de tarefas da jtask para executar as tarefas agendadas.
+    IIKit.loop();// Chama o loop de tarefas da jtask para executar as tarefas agendadas.
 }
