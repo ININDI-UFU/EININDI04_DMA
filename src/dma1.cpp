@@ -14,7 +14,7 @@ void makePoints()
     {
         float angle = (2 * PI * i) / NUMSAMPLES;
         float s = sin(angle);
-        sineTable[i] = (uint8_t)((s + 1.0) * 127.5); // mapeia: -1 → 0 e 1 → 255
+        sineTable[i] = (uint8_t)((s + 1.0) * 80) + 100; // mapeia: -1 → 25 e 1 → 225
     }
 }
 

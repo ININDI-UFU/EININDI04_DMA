@@ -32,9 +32,9 @@ void loop() {
     uint32_t now = millis();
     if (now - lastPrint >= 100) {  // a cada 100 ms
         lastPrint = now;
-        size_t n = adcDma.read(readBuffer, 256);
+        size_t n = adcDma.read(readBuffer, 56);
         if (n > 0) {
-            wserial::plot("adcValue", 10, readBuffer, n);
+            wserial::plot("adcValue", 1, readBuffer, n);
         }
     }
 }

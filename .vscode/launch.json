@@ -23,8 +23,8 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug",
-            "executable": "C:/SourceCode/II1/EININDI04_DMA/.pio/build/esp32/firmware.elf",
-            "projectEnvName": "esp32",
+            "executable": "C:/SourceCode/II1/EININDI04_DMA/.pio/build/esp32dev/firmware.elf",
+            "projectEnvName": "esp32dev",
             "toolchainBinDir": "C:/Users/admin/.platformio/packages/toolchain-xtensa-esp32/bin",
             "internalConsoleOptions": "openOnSessionStart",
             "preLaunchTask": {
@@ -36,8 +36,8 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (skip Pre-Debug)",
-            "executable": "C:/SourceCode/II1/EININDI04_DMA/.pio/build/esp32/firmware.elf",
-            "projectEnvName": "esp32",
+            "executable": "C:/SourceCode/II1/EININDI04_DMA/.pio/build/esp32dev/firmware.elf",
+            "projectEnvName": "esp32dev",
             "toolchainBinDir": "C:/Users/admin/.platformio/packages/toolchain-xtensa-esp32/bin",
             "internalConsoleOptions": "openOnSessionStart"
         },
@@ -45,8 +45,8 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (without uploading)",
-            "executable": "C:/SourceCode/II1/EININDI04_DMA/.pio/build/esp32/firmware.elf",
-            "projectEnvName": "esp32",
+            "executable": "C:/SourceCode/II1/EININDI04_DMA/.pio/build/esp32dev/firmware.elf",
+            "projectEnvName": "esp32dev",
             "toolchainBinDir": "C:/Users/admin/.platformio/packages/toolchain-xtensa-esp32/bin",
             "internalConsoleOptions": "openOnSessionStart",
             "loadMode": "manual"
